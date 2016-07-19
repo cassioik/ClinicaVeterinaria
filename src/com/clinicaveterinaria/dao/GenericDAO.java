@@ -6,8 +6,7 @@ import javax.persistence.EntityNotFoundException;
 import javax.persistence.Persistence;
 
 public abstract class GenericDAO<ID,U> {
-	private static final EntityManagerFactory emf =
-			Persistence.createEntityManagerFactory("clinica_pu");
+	private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("clinica_pu");
 	private EntityManager em;
 	private Class<U> entityClass;
 	
